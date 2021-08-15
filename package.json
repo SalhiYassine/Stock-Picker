@@ -1,0 +1,39 @@
+{
+  "name": "stock-analyser",
+  "version": "1.0.0",
+  "description": "An application to help you select stocks based on the their value",
+  "main": "server.js",
+  "type": "module",
+
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalhiYassine/Stock-Picker.git"
+  },
+  "author": "yassine salhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalhiYassine/Stock-Picker/issues"
+  },
+  "homepage": "https://github.com/SalhiYassine/Stock-Picker#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
